@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Khôi Ph</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khôi Ph</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- ===== SPLASH ===== -->
+  <div id="splash">
+    <div class="bokeh" id="bokeh"></div>
+    <div class="splash-text">click to enter...</div>
+  </div>
+
+
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
+  * { margin:0; padding:0; box-sizing:border-box; }
 
 :root {
   --ruby:   #9B1B30;
@@ -200,7 +215,7 @@
   display:flex; align-items:center; justify-content:center; gap:8px;
   margin-top:22px; width:100%; padding:14px;
   background:linear-gradient(135deg,var(--ruby) 0%,var(--ruby2) 100%);
-  color:#fff; font-family:'Cinzel',serif; font-size:0.82rem; letter-spacing:0.12em;
+  color:#fff; font-family:Arial, Helvetica, sans-serif; font-size:0.82rem; letter-spacing:0.12em;
   border:none; border-radius:12px; cursor:pointer; text-decoration:none;
   transition:all 0.3s ease; position:relative; overflow:hidden;
   box-shadow:0 4px 20px rgba(155,27,48,0.35);
@@ -386,173 +401,163 @@
   }
 }
 </style>
-</head>
-<body>
+  <!-- ===== MAIN ===== -->
+  <div id="main">
+    <!-- BG layers -->
+    <div class="bg-img"></div> <!-- ← thêm URL ảnh nền vào style hoặc inline -->
+    <div class="bg-overlay"></div>
+    <div class="particles" id="particles"></div>
+    <div class="scanlines"></div>
 
-<!-- ===== SPLASH ===== -->
-<div id="splash">
-  <div class="bokeh" id="bokeh"></div>
-  <div class="splash-text">click to enter...</div>
-</div>
+    <!-- CARD -->
+    <div class="card">
 
-
-
-<!-- ===== MAIN ===== -->
-<div id="main">
-  <!-- BG layers -->
-  <div class="bg-img"></div>    <!-- ← thêm URL ảnh nền vào style hoặc inline -->
-  <div class="bg-overlay"></div>
-  <div class="particles" id="particles"></div>
-  <div class="scanlines"></div>
-
-  <!-- CARD -->
-  <div class="card">
-
-    <!-- Avatar + Name -->
-    <div class="avatar-section">
-      <div class="avatar-ring">
-        <div class="avatar-img">K</div>   <!-- ← thêm background-image URL ảnh avatar -->
+      <!-- Avatar + Name -->
+      <div class="avatar-section">
+        <div class="avatar-ring">
+          <div class="avatar-img">K</div> <!-- ← thêm background-image URL ảnh avatar -->
+        </div>
+        <div class="name">Nguyên <span>Khôi</span></div>
+        <div class="bio">「 student 」</div>
+        <div class="view-count"><i class="fas fa-cake"></i> 2008</div>
       </div>
-      <div class="name">Nguyên <span>Khôi</span></div>
-      <div class="bio">「 student 」</div>
-      <div class="view-count"><i class="fas fa-cake"></i> 2008</div>
+
+      <div class="divider"></div>
+
+      <!-- Contact links -->
+      <div class="contacts">
+        <a class="contact-item" href="https://www.facebook.com/khoi.ph.224604/" target="_blank">
+          <div class="icon-wrap icon-fb"><i class="fab fa-facebook-f"></i></div>
+          <div class="contact-text">
+            <span class="contact-label">Facebook</span>
+            <span class="contact-value">Khôi Ph</span>
+          </div>
+          <i class="fas fa-chevron-right arrow"></i>
+        </a>
+
+        <a class="contact-item" href="https://discord.com/users/khoi_marks77" target="_blank">
+          <div class="icon-wrap icon-discord"><i class="fab fa-discord"></i></div>
+          <div class="contact-text">
+            <span class="contact-label">Discord</span>
+            <span class="contact-value">khoi_marks77</span>
+          </div>
+          <i class="fas fa-chevron-right arrow"></i>
+        </a>
+
+        <a class="contact-item" href="mailto:khoiphnts01914@gmail.com">
+          <div class="icon-wrap icon-email"><i class="fas fa-paper-plane"></i></div>
+          <div class="contact-text">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">khoiphnts01914@gmail.com</span>
+          </div>
+          <i class="fas fa-chevron-right arrow"></i>
+        </a>
+
+        <a class="contact-item" href="tel:+84708322206">
+          <div class="icon-wrap icon-phone"><i class="fas fa-phone-alt"></i></div>
+          <div class="contact-text">
+            <span class="contact-label">Số điện thoại</span>
+            <span class="contact-value">0708 322 206</span>
+          </div>
+          <i class="fas fa-chevron-right arrow"></i>
+        </a>
+      </div>
+
+      <a class="btn-save" href="#">
+        <span><i class="fas fa-user-plus"></i> &nbsp;Lưu vào danh ba</span>
+      </a>
+
+
     </div>
-
-    <div class="divider"></div>
-
-    <!-- Contact links -->
-    <div class="contacts">
-      <a class="contact-item" href="https://www.facebook.com/khoi.ph.224604/" target="_blank">
-        <div class="icon-wrap icon-fb"><i class="fab fa-facebook-f"></i></div>
-        <div class="contact-text">
-          <span class="contact-label">Facebook</span>
-          <span class="contact-value">Khôi Ph</span>
-        </div>
-        <i class="fas fa-chevron-right arrow"></i>
-      </a>
-
-      <a class="contact-item" href="https://discord.com/users/khoi_marks77" target="_blank">
-        <div class="icon-wrap icon-discord"><i class="fab fa-discord"></i></div>
-        <div class="contact-text">
-          <span class="contact-label">Discord</span>
-          <span class="contact-value">khoi_marks77</span>
-        </div>
-        <i class="fas fa-chevron-right arrow"></i>
-      </a>
-
-      <a class="contact-item" href="mailto:khoiphnts01914@gmail.com">
-        <div class="icon-wrap icon-email"><i class="fas fa-paper-plane"></i></div>
-        <div class="contact-text">
-          <span class="contact-label">Email</span>
-          <span class="contact-value">khoiphnts01914@gmail.com</span>
-        </div>
-        <i class="fas fa-chevron-right arrow"></i>
-      </a>
-
-      <a class="contact-item" href="tel:+84708322206">
-        <div class="icon-wrap icon-phone"><i class="fas fa-phone-alt"></i></div>
-        <div class="contact-text">
-          <span class="contact-label">Số điện thoại</span>
-          <span class="contact-value">0708 322 206</span>
-        </div>
-        <i class="fas fa-chevron-right arrow"></i>
-      </a>
-    </div>
-
-    <a class="btn-save" href="#">
-      <span><i class="fas fa-user-plus"></i> &nbsp;Lưu vào danh bạ</span>
-    </a>
-
-    
   </div>
-</div>
 
-<!-- AUDIO — thay src bằng file nhạc của bạn -->
-<audio id="bg-music" loop>
-  <source src="/img/music.mp3" type="audio/mpeg">
-</audio>
+  <!-- AUDIO — thay src bằng file nhạc của bạn -->
+  <audio id="bg-music" loop>
+    <source src="/img/music.mp3" type="audio/mpeg">
+  </audio>
 
-<!-- MUSIC BTN -->
-<button id="music-btn">
-  <i class="fas fa-music note-icon"></i>
-  <div class="eq-bars"><span></span><span></span><span></span><span></span><span></span></div>
-</button>
+  <!-- MUSIC BTN -->
+  <button id="music-btn">
+    <i class="fas fa-music note-icon"></i>
+    <div class="eq-bars"><span></span><span></span><span></span><span></span><span></span></div>
+  </button>
 
-<script>
-/* ---- Bokeh trên splash ---- */
-const bokehEl = document.getElementById('bokeh');
-const rubyColors = ['rgba(155,27,48,0.5)','rgba(192,57,43,0.4)','rgba(255,71,87,0.35)','rgba(61,0,16,0.6)','rgba(120,10,30,0.45)'];
-for (let i = 0; i < 22; i++) {
-  const s = document.createElement('span');
-  const size = 30 + Math.random() * 90;
-  s.style.cssText = `
+  <script>
+    /* ---- Bokeh trên splash ---- */
+    const bokehEl = document.getElementById('bokeh');
+    const rubyColors = ['rgba(155,27,48,0.5)', 'rgba(192,57,43,0.4)', 'rgba(255,71,87,0.35)', 'rgba(61,0,16,0.6)', 'rgba(120,10,30,0.45)'];
+    for (let i = 0; i < 22; i++) {
+      const s = document.createElement('span');
+      const size = 30 + Math.random() * 90;
+      s.style.cssText = `
     width:${size}px; height:${size}px;
-    left:${Math.random()*100}%;
-    background:${rubyColors[Math.floor(Math.random()*rubyColors.length)]};
-    animation-duration:${6+Math.random()*10}s;
-    animation-delay:${Math.random()*8}s;
+    left:${Math.random() * 100}%;
+    background:${rubyColors[Math.floor(Math.random() * rubyColors.length)]};
+    animation-duration:${6 + Math.random() * 10}s;
+    animation-delay:${Math.random() * 8}s;
   `;
-  bokehEl.appendChild(s);
-}
+      bokehEl.appendChild(s);
+    }
 
-/* ---- Falling particles on main ---- */
-const partEl = document.getElementById('particles');
-for (let i = 0; i < 30; i++) {
-  const p = document.createElement('div');
-  p.className = 'particle';
-  const size = 3 + Math.random() * 7;
-  const colors = ['rgba(155,27,48,0.7)','rgba(255,71,87,0.6)','rgba(192,57,43,0.5)','rgba(255,255,255,0.15)'];
-  p.style.cssText = `
+    /* ---- Falling particles on main ---- */
+    const partEl = document.getElementById('particles');
+    for (let i = 0; i < 30; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      const size = 3 + Math.random() * 7;
+      const colors = ['rgba(155,27,48,0.7)', 'rgba(255,71,87,0.6)', 'rgba(192,57,43,0.5)', 'rgba(255,255,255,0.15)'];
+      p.style.cssText = `
     width:${size}px; height:${size}px;
-    left:${Math.random()*100}%;
-    background:${colors[Math.floor(Math.random()*colors.length)]};
-    filter: blur(${Math.random()*1.5}px);
-    animation-duration:${7+Math.random()*12}s;
-    animation-delay:${Math.random()*10}s;
+    left:${Math.random() * 100}%;
+    background:${colors[Math.floor(Math.random() * colors.length)]};
+    filter: blur(${Math.random() * 1.5}px);
+    animation-duration:${7 + Math.random() * 12}s;
+    animation-delay:${Math.random() * 10}s;
   `;
-  partEl.appendChild(p);
-}
+      partEl.appendChild(p);
+    }
 
-/* ---- Splash click → bật nhạc + hiện main ---- */
-const splash   = document.getElementById('splash');
-const main     = document.getElementById('main');
-const music    = document.getElementById('bg-music');
-const musicBtn = document.getElementById('music-btn');
-let playing    = false;
+    /* ---- Splash click → bật nhạc + hiện main ---- */
+    const splash = document.getElementById('splash');
+    const main = document.getElementById('main');
+    const music = document.getElementById('bg-music');
+    const musicBtn = document.getElementById('music-btn');
+    let playing = false;
 
-splash.addEventListener('click', () => {
-  // phát nhạc
-  music.play().catch(() => {});
-  playing = true;
-  musicBtn.classList.add('playing');
+    splash.addEventListener('click', () => {
+      // phát nhạc
+      music.play().catch(() => { });
+      playing = true;
+      musicBtn.classList.add('playing');
 
-  // ẩn splash
-  splash.classList.add('hide');
-  setTimeout(() => { splash.style.display = 'none'; }, 950);
+      // ẩn splash
+      splash.classList.add('hide');
+      setTimeout(() => { splash.style.display = 'none'; }, 950);
 
-  // hiện main
-  main.classList.add('show');
+      // hiện main
+      main.classList.add('show');
 
-  // animate contact items
-  setTimeout(() => {
-    document.querySelectorAll('.contact-item').forEach((el, i) => {
-      setTimeout(() => el.classList.add('show'), i * 130);
+      // animate contact items
+      setTimeout(() => {
+        document.querySelectorAll('.contact-item').forEach((el, i) => {
+          setTimeout(() => el.classList.add('show'), i * 130);
+        });
+      }, 500);
     });
-  }, 500);
-});
 
-/* ---- Music toggle button ---- */
-musicBtn.addEventListener('click', () => {
-  if (!playing) {
-    music.play();
-    musicBtn.classList.add('playing');
-    playing = true;
-  } else {
-    music.pause();
-    musicBtn.classList.remove('playing');
-    playing = false;
-  }
-});
-</script>
+    /* ---- Music toggle button ---- */
+    musicBtn.addEventListener('click', () => {
+      if (!playing) {
+        music.play();
+        musicBtn.classList.add('playing');
+        playing = true;
+      } else {
+        music.pause();
+        musicBtn.classList.remove('playing');
+        playing = false;
+      }
+    });
+  </script>
 </body>
+
 </html>
