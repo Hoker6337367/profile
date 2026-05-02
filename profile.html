@@ -274,6 +274,12 @@
 /* ================================================
    DESKTOP OVERRIDE — chỉ ghi đè layout >= 1025px
    ================================================ */
+
+   @media(min-width: 50px){
+.avatar-img img{
+    height: 100px;
+  }
+   }
 @media (min-width: 1025px) {
 
   /* Main flex center */
@@ -302,6 +308,10 @@
     gap: 0 48px;
     align-items: center;
     width: min(1100px, 94vw);
+  }
+
+  .avatar-img img{
+    height: 147px;
   }
 
   /* Ẩn top glow bar của card trên desktop */
@@ -415,7 +425,7 @@
       <!-- Avatar + Name -->
       <div class="avatar-section">
         <div class="avatar-ring">
-          <div class="avatar-img">K</div> <!-- ← thêm background-image URL ảnh avatar -->
+          <div class="avatar-img"><img src="img/image.png" alt="" "></div> <!-- ← thêm background-image URL ảnh avatar -->
         </div>
         <div class="name">Nguyên <span>Khôi</span></div>
         <div class="bio">「 student 」</div>
@@ -464,7 +474,7 @@
       </div>
 
       <a class="btn-save" href="#">
-        <span><i class="fas fa-user-plus"></i> &nbsp;Lưu vào danh ba</span>
+        <span><i class="fas fa-user-plus"></i> &nbsp;Lưu vào danh bạ </span>
       </a>
 
 
